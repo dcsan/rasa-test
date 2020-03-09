@@ -1,43 +1,42 @@
+actions:
+- utter_greet
+- utter_check_over_21
+- utter_give_drink
+- utter_no_drink
+- utter_goodbye
+- utter_apology
+
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - ask_for_drink
-  - thanks
+- greet
+- affirm
+- ask_for_drink
+- goodbye
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- thanks
+- tell_me_a_joke
 
 responses:
-  utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
   utter_check_over_21:
   - text: Are you over 21?
-
   utter_give_drink:
-    - text: Here's your drink!
-  
+  - text: Here's your drink!
+  utter_goodbye:
+  - text: Bye
+  utter_greet:
+  - text: Hey! How are you?
   utter_no_drink:
-    - text: sorry, can't serve ya
+  - text: sorry, can't serve ya
+  utter_apology:
+  - text: sorry about that
+
+  utter_joke:
+  - text: Here's a joke!
+  - text: another joke!
+  - text: third funny joke here!
 
 session_config:
-  session_expiration_time: 60
   carry_over_slots_to_new_session: true
+  session_expiration_time: 60

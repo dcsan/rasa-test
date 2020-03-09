@@ -1,10 +1,12 @@
+<!-- 
 ## over age
 * greet
   - utter_greet
 * ask_for_drink
-  - utter_check_over_21
+  > checkage
 * affirm
   - utter_give_drink
+  > telljoke
 * thanks
   - utter_goodbye
 
@@ -12,12 +14,28 @@
 * greet
   - utter_greet
 * ask_for_drink
-  - utter_check_over_21
+  > checkage
 * deny
   - utter_no_drink
+  - utter_apology 
+  > telljoke
   - utter_goodbye  
 
-
 ## check age
-> checkage
 - utter_check_over_21
+- utter_apology
+> checkage
+
+-->
+
+
+
+## asked joke
+> telljoke
+* greet
+- utter_greet
+- utter_goodbye
+
+## tell joke
+- utter_joke
+> telljoke

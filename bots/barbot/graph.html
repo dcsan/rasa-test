@@ -137,28 +137,15 @@
     graph = `digraph  {
 0 [class="start active", fillcolor=green, fontsize=12, label=START, style=filled];
 "-1" [class=end, fillcolor=red, fontsize=12, label=END, style=filled];
-1 [class="", fontsize=12, label=utter_greet];
-2 [class="", fontsize=12, label=utter_check_over_21];
-3 [class="", fontsize=12, label=utter_give_drink];
-4 [class="", fontsize=12, label=utter_goodbye];
-7 [class="", fontsize=12, label=utter_no_drink];
-9 [class=intent, fillcolor=lightblue, label="good evening", shape=rect, style=filled];
-10 [class=intent, fillcolor=lightblue, label=drink, shape=rect, style=filled];
-11 [class=intent, fillcolor=lightblue, label=yes, shape=rect, style=filled];
-12 [class=intent, fillcolor=lightblue, label=no, shape=rect, style=filled];
-13 [class=intent, fillcolor=lightblue, label=thanks, shape=rect, style=filled];
-0 -> 9  [class="", key=0];
-1 -> 10  [class="", key=0];
-2 -> 11  [class="", key=0];
-2 -> 12  [class="", key=0];
-3 -> 13  [class="", key=0];
-4 -> "-1"  [class="", key=NONE, label=""];
-7 -> 4  [class="", key=NONE, label=""];
-9 -> 1  [class="", key=0];
-10 -> 2  [class="", key=0];
-11 -> 3  [class="", key=0];
-12 -> 7  [class="", key=0];
-13 -> 4  [class="", key=0];
+1 [class="", fontsize=12, label=utter_joke];
+2 [class="", fontsize=12, label=utter_greet];
+3 [class="", fontsize=12, label=utter_goodbye];
+4 [class=intent, fillcolor=lightblue, label=hey, shape=rect, style=filled];
+0 -> 1  [class="", key=NONE, label=""];
+1 -> 4  [class="", key=0];
+2 -> 3  [class="", key=NONE, label=""];
+3 -> "-1"  [class="", key=NONE, label=""];
+4 -> 2  [class="", key=0];
 }
 `;
     drawGraph(graph);
