@@ -1,31 +1,23 @@
-## happy path
+## over age
 * greet
   - utter_greet
-* mood_great
-  - utter_happy
-
-## sad path 1
-* greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
+* ask_for_drink
+  - utter_check_over_21
 * affirm
-  - utter_happy
+  - utter_give_drink
+* thanks
+  - utter_goodbye
 
-## sad path 2
+## under age
 * greet
   - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
+* ask_for_drink
+  - utter_check_over_21
 * deny
-  - utter_goodbye
+  - utter_no_drink
+  - utter_goodbye  
 
-## say goodbye
-* goodbye
-  - utter_goodbye
 
-## bot challenge
-* bot_challenge
-  - utter_iamabot
+## check age
+> checkage
+- utter_check_over_21

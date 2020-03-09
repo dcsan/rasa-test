@@ -54,3 +54,13 @@
 - are you a human?
 - am I talking to a bot?
 - am I talking to a human?
+
+## intent:ask_for_drink
+- get me a drink
+- drink
+- i want something to drink
+
+## intent:thanks
+- thanks
+- thank you
+- thanks very much
