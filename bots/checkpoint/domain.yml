@@ -1,0 +1,19 @@
+actions:
+- utter_greet
+- utter_bye
+
+intents:
+- greet
+- bye
+
+responses:
+  utter_greet:
+  - text: Hey how are you!
+  - text: Hello!
+  utter_bye:
+    - text: see ya!
+    - text: bye bye
+  
+session_config:
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 60
